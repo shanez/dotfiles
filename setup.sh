@@ -27,7 +27,7 @@ brewApps ()
 	echoName "Brewing Apps"
 
 	# Install some needed apps
-	brew cask install iterm2 docker-machine dockertoolbox docker-compose dash cloud divvy google-chrome skype transmission spotify alfred sublime-text xscope slack skitch toggldesktop dropbox disk-inventory-x bee
+	brew cask install iterm2 docker-machine dockertoolbox docker-compose dash cloud divvy google-chrome skype transmission spotify alfred sublime-text xscope slack skitch toggldesktop dropbox disk-inventory-x bee tower
 }
 
 zshell ()
@@ -40,9 +40,6 @@ zshell ()
 
 	# OMG-ZShell
 	sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-	# Copy ZSH files
-	# @TODO
 }
 
 preferences ()
