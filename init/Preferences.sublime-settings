@@ -28,14 +28,12 @@
 		".settings",
 		".idea"
 	],
-	"highlight_modified_tabs": true,
 	"font_face": "Bitstream Vera Sans",
 	"font_options":
 	[
 		"subpixel_antialias"
 	],
 	"font_size": 12.0,
-	"match_brackets": true,
 	"highlight_line": true,
 	"ignored_packages":
 	[
