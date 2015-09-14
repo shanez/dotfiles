@@ -46,7 +46,7 @@ brew install vim --override-system-vi
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
-brew install homebrew/php/php55 --with-gmp
+# brew install homebrew/php/php55 --with-gmp
 
 # Install font tools.
 brew tap bramstein/webfonttools
@@ -87,18 +87,27 @@ brew install dark-mode
 brew install git
 brew install git-lfs
 brew install imagemagick --with-webp
-brew install lua
-brew install lynx
+# brew install lua
+# brew install lynx
 brew install p7zip
-brew install pigz
-brew install pv
+# brew install pigz
+brew install pv	# Shows progress of piped arguments with a visual indicator
 brew install rename
-brew install rhino
+brew install rhino    # Open source version of JS written in Java
 brew install speedtest_cli
 brew install ssh-copy-id
 brew install tree
 brew install webkit2png
 brew install zopfli
+
+# Customs
+brew install node
+brew install python
+brew install python3
+brew install pip
+pip install virtualenv virtualenvwrapper
+
+
 
 # Remove outdated versions from the cellar.
 brew cleanup
