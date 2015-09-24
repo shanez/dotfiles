@@ -27,7 +27,7 @@ brewApps ()
 	echoName "Brewing Apps"
 
 	# Install some needed apps
-	brew cask install iterm2 docker-machine dockertoolbox docker-compose dash cloud divvy google-chrome skype transmission spotify alfred sublime-text xscope slack skitch toggldesktop dropbox disk-inventory-x bee tower
+	brew cask install iterm2 docker-machine dockertoolbox docker-compose dash cloud divvy google-chrome skype transmission spotify alfred sublime-text xscope slack skitch toggldesktop dropbox disk-inventory-x bee tower textwrangler
 }
 
 zshell ()
@@ -55,6 +55,9 @@ preferences ()
 
 	# Install Watchdog / Hues
 	# @TODO
+
+	# Copy ZSH Prefrences
+	cp -r init/.oh-my-zsh ~/.oh-my-zsh
 }
 
 defaultFolders ()
@@ -80,6 +83,7 @@ openApps ()
 	open ~/Applications/Dropbox.app
 	open ~/Applications/Spotify.app
 	open ~/Applications/Alfred\ 2.app
+	open ~/Applications/TextWrangler.app
 }
 
 hotcorners ()
@@ -128,6 +132,9 @@ copyPreferences ()
 
 	# Copy Sublime preferences into repo
 	cp ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Preferences.sublime-settings init/Preferences.sublime-settings
+
+	# Copy ZSH Preferences
+	cp -r ~/.oh-my-zsh init/.oh-my-zsh
 
 	# Alert that we should commit / update
 	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
