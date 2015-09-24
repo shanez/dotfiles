@@ -52,6 +52,7 @@ preferences ()
 
 	# Copy Sublime preferences
 	cp init/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Preferences.sublime-settings init/Preferences.sublime-settings
+	# @TODO - Add Soda
 
 	# Install Watchdog / Hues
 	# @TODO
@@ -67,7 +68,7 @@ defaultFolders ()
 	mkdir ~/Code
 	mkdir ~/git
 
-	git clone gh:chriskempson/tomorrow-theme.git ~/git/
+	git clone https://github.com/chriskempson/tomorrow-theme.git ~/git/tomorrow-theme
 }
 
 openApps ()
@@ -84,12 +85,6 @@ openApps ()
 	open ~/Applications/Spotify.app
 	open ~/Applications/Alfred\ 2.app
 	open ~/Applications/TextWrangler.app
-}
-
-hotcorners ()
-{
-	gsettings set org.pantheon.desktop.gala.behavior hotcorner-topright 'window-overview'
-	# gsettings set org.pantheon.desktop.gala.behavior hotcorner-bottomleft 'window-hide'
 }
 
 copyDots ()
@@ -137,9 +132,9 @@ copyPreferences ()
 	cp -r ~/.oh-my-zsh init/.oh-my-zsh
 
 	# Alert that we should commit / update
-	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 	echo "Changes have been made.  Please commit"
-	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 }
 
 # Read command line arguments and call function name
