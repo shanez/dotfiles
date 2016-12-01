@@ -76,15 +76,7 @@ openApps ()
 	echoName "Opening Apps"
 
 	# Open programs to finalize setup
-	open ~/Applications/Skype.app
-	open ~/Applications/CloudApp.app
 	open ~/Applications/Divvy.app
-	open ~/Applications/Slack.app
-	open ~/Applications/TogglDesktop.app
-	open ~/Applications/Dropbox.app
-	open ~/Applications/Spotify.app
-	open ~/Applications/Alfred\ 2.app
-	open ~/Applications/TextWrangler.app
 }
 
 copyDots ()
