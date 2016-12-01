@@ -27,7 +27,7 @@ brewApps ()
 	echoName "Brewing Apps"
 
 	# Install some needed apps
-	brew cask install iterm2 docker-machine dockertoolbox docker-compose dash cloud divvy google-chrome skype transmission spotify alfred sublime-text xscope slack skitch toggldesktop dropbox disk-inventory-x bee tower textwrangler
+	brew cask install iterm2 docker-machine dockertoolbox docker-compose dash divvy google-chrome alfred sublime-text xscope skitch bee tower textwrangler
 }
 
 zshell ()
